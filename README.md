@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Luna Heeremans
 
   #### Je startniveau:
-  Blauw 
+  Rood
 
   #### Je focus:
   surface plane
@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+ (https://www.apple.com)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
