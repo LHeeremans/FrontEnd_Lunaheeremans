@@ -60,6 +60,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+<li> <ul>Voice leest alles netjes en duidelijk voor, zonder enige foutjes.</ul>
+  <ul>Alt tekst gaat wel veel fout, vooral bij symbolen</ul>
+  <ul>Grote teksten worden voorgelezen, maar het is wel lastig omdat die qua spelling voorleest.</ul>
+  <ul>Alle grote foto's hebben wel een goede alt.</ul>
+  <ul>De website heeft geen functie van dark-mode.</ul>
+  <ul>Tijdens het testen springt de voice-over van teksten voorlezen naar per letter voorlezen.</ul>
+  <ul>Bij lijstjes leest die netjes van boven naar beneden, maar kan ook van links naar rechts</ul>
+  <ul>Wat wel vervelend is, is dat hij blijft vasthangen op voetnoten</ul>
+  <ul>Bij de apple + film stukje, leest die het voor en heeft die juiste alt tekst. </ul>
+  <ul>Het laat weten hoeveel onderdelen er per onderwerp of onderdeel staat.</ul>
+</li>
 
 </details>
 
