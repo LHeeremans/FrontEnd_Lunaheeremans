@@ -80,10 +80,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/apple home" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/apple home.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/home.png" width="375px" alt="header">
+  <img src="readme-images/Home.png" width="375px" alt="header">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/stuk1.png" width="375px" alt="pagina stuk 1">
