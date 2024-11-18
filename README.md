@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  (https://www.apple.com)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  home apple 
 <<<<<<< HEAD
   <img src="readme-images/apple home.png" width="350px" alt="homepagina web">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  support apple
   <img src="readme-images/apple support.png" width="350px" alt="hulp pagina web">
  
 </details>
