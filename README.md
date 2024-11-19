@@ -39,15 +39,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  (https://www.apple.com)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  home apple 
 <<<<<<< HEAD
-  <img src="readme-images/home.png" width="350px" alt="homepagina web">
-   <img src="readme-images/home_2.png" width="350px" alt="homepagina web">
+  <img src="readme-images/apple home.png" width="350px" alt="homepagina web">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/Hulp.png" width="350px" alt="hulp pagina web">
-  <img src="readme-images/hulp_2.png" width="350px" alt="hulp pagina telefoon">
+  support apple
+  <img src="readme-images/apple support.png" width="350px" alt="hulp pagina web">
  
 </details>
 
@@ -82,13 +80,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/apple home.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Home.png" width="375px" alt="header">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/stuk1.png" width="375px" alt="pagina stuk 1">
+
+  ### dynamisch deel (bijv menu): 
+  <img src="readme-images/stuk2.png" width="375px" alt="pagina stuk 2">
+
+  ### wellicht nog een dynamisch deel (bijv filter): 
+  <img src="readme-images/footer.png" width="375px" alt="de footer">
 
 </details>
 
