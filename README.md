@@ -118,11 +118,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Joost       | Luna                   | iris      
-  |             | Align items of justify | hetzelfde als joost       
+  | Joost      <br> | Luna         <br>          | iris      
+  | tekst en foto's over elkaar            | Align items of justify | hetzelfde als joost       
   | pixels      | goed iets oproepen     | hetzelfde als luna    
-  | svg images  | :nth child of h2 t {   |  
-  | tekst en foto's over elkaar          |                
+  | svg images  | :nth child of h2 t {   |  binnen een grid afbeeldingen centreren
+  |           |                
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
