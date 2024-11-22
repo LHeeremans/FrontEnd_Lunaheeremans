@@ -47,7 +47,6 @@ header {
   
   button:nth-of-type(1) {
 	position:relative;
-	z-index:1;
 	order: 1;
 	border: none;
 	background:none;
@@ -55,21 +54,21 @@ header {
 	
   }
   
-  /* nav.toonMenu button:first-of-type img { 
+ nav.toonMenu button:first-of-type img { 
 	content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
 	
-  }*/
+  }
 
 
   
   nav ul { 
 	position:fixed;
-	top: 7em;
 	bottom:0;
 	left:0;
 	right:0;
+	top: 0;
 	
-	translate:-98%;
+	translate:-100%;
 	transition:1s;
 
 
@@ -79,7 +78,8 @@ header {
   nav.toonMenu ul {
 	translate: 0;
 	background-color: #F5F5F7;
-	padding-top: -100em;
+	padding-top: -110em;
+	z-index: 1000000000;
 	
   }
   @media (min-width:38em) {
@@ -124,6 +124,7 @@ header {
 	nav a {
 	  flex-direction:row;
 	  background-color: #F5F5F7;
+	  
 	}
   }
 
