@@ -118,12 +118,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Joost       | Luna                   | iris      
+  | tekst en foto's over elkaar            | Align items of justify | hetzelfde als joost       
+  | pixels      | goed iets oproepen     | hetzelfde als luna    
+  | svg images  | :nth child of h2 t {   |  binnen een grid afbeeldingen centreren
+  |           |                
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
