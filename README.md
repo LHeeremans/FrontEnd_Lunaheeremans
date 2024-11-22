@@ -91,6 +91,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/stuk2.png" width="375px" alt="pagina stuk 2">
 
+   ### dynamisch deel (bijv menu): 
+  <img src="readme-images/stuk3.png" width="375px" alt="pagina stuk 3">
+
+   ### dynamisch deel (bijv menu): 
+  <img src="readme-images/stuk4.png" width="375px" alt="pagina stuk 4">
+
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/footer.png" width="375px" alt="de footer">
 
@@ -107,7 +113,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+ <img src="readme-images/FireShot Capture 003 - Apple_Luna - 127.0.0.1.png" width="375px" alt="pagina stuk 2">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
