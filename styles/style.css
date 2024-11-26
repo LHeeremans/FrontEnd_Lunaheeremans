@@ -5,6 +5,8 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -21,7 +23,11 @@
 	--color-background: #eee;
 }
 
-
+body {
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	line-height: 2em;
+	text-align: center;
+  }
 
 
 
@@ -40,32 +46,37 @@ nav {
 	display: flex;
 }
 
-button:nth-of-type(1) {
+nav button:nth-of-type(1) {
 	position: relative;
 	order: 1;
 	border: none;
 	background: none;
 	color: black;
+	justify-content: right;
+	left:17em;
 
 }
 
 nav.toonMenu button:first-of-type img {
-	content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
-
+	content: url("../images/kruis.svg");
+	z-index: 999999999;
+	position: relative;
+	
 }
 
+nav.button:first-of-type img {
 
+}
 
 nav ul {
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	top: 0;
-
+    top: 0;
 	translate: -100%;
 	transition: 1s;
-
+    
 
 
 
@@ -74,10 +85,17 @@ nav ul {
 nav.toonMenu ul {
 	translate: 0;
 	background-color: #F5F5F7;
-	padding-top: -110em;
-	z-index: 1000000000;
+	
+	z-index: 99;
+	text-align: left;
 
 }
+
+nav.toonMenu ul li {
+	margin-left: 4em;
+
+}
+
 
 @media (min-width:38em) {
 	nav {
@@ -107,6 +125,7 @@ nav.toonMenu ul {
 
 		display: flex;
 		flex-direction: column;
+		right: 4em;
 	}
 
 	header>a:last-of-type {
@@ -139,55 +158,3 @@ h1 {
 
 
 
-img {
-	height: auto;
-	width: 3em;
-}
-
-main button {
-	border-radius: 5em;
-	width: 10em;
-	height: 3em;
-}
-
-
-main button:nth-child(1n) {
-	background-color: #0071e3;
-	border: none;
-	color: white;
-	order: 0;
-
-}
-
-main button:nth-child(2n) {
-	background: transparent;
-	border: .2em solid #0071e3;
-	color: #0071e3;
-	order: 0;
-
-}
-
-ul {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-}
-
-main ul {
-	display: flex;
-	gap: 1em;
-	overflow-x: scroll;
-
-}
-
-main ul img {
-	height: 25em;
-	width: auto;
-}
-
-p {
-	align-items: center;
-}
