@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,19 +17,11 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
 
 
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
 
 
 
@@ -35,152 +29,165 @@
 /* DE HEADER */
 /*************/
 header {
-  display:flex;
-  justify-content:space-between;
-   
-  background-color: #F5F5F7;
-	
-  }
-  nav{
 	display: flex;
-  }
-  
-  button:nth-of-type(1) {
-	position:relative;
+	justify-content: space-between;
+
+	background-color: #F5F5F7;
+
+}
+
+nav {
+	display: flex;
+}
+
+button:nth-of-type(1) {
+	position: relative;
 	order: 1;
 	border: none;
-	background:none;
+	background: none;
 	color: black;
-	
-  }
-  
- nav.toonMenu button:first-of-type img { 
-	content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
-	
-  }
+
+}
+
+nav.toonMenu button:first-of-type img {
+	content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
+
+}
 
 
-  
-  nav ul { 
-	position:fixed;
-	bottom:0;
-	left:0;
-	right:0;
+
+nav ul {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	top: 0;
-	
-	translate:-100%;
-	transition:1s;
+
+	translate: -100%;
+	transition: 1s;
 
 
-	
-	
-  }
-  nav.toonMenu ul {
+
+
+}
+
+nav.toonMenu ul {
 	translate: 0;
 	background-color: #F5F5F7;
 	padding-top: -110em;
 	z-index: 1000000000;
-	
-  }
-  @media (min-width:38em) {
+
+}
+
+@media (min-width:38em) {
 	nav {
-	  order:0;
-	  
+		order: 0;
+
 	}
-	
+
 	nav button:nth-child(1) {
-	  display:none;
-	  
+		display: none;
+
 	}
-	
+
 	nav ul {
-	  translate:unset;
-	  position:static;
-	  background:none;
-	  padding:0;
-	  
-	  display:flex;
-	  flex-wrap:nowrap;
-	  gap:2em;
+		translate: unset;
+		position: static;
+		background: none;
+		padding: 0;
+
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 2em;
 
 	}
-	
+
 	nav a {
-	  border:none;
-	  
-	  display:flex;
-	  flex-direction:column;
+		border: none;
+
+		display: flex;
+		flex-direction: column;
 	}
-	
-	header > a:last-of-type {
-	  display:flex;
-	  flex-direction:column;
-	  
+
+	header>a:last-of-type {
+		display: flex;
+		flex-direction: column;
+
 	}
-  }
-  
-  @media (min-width:54em) {
-	header > a:last-of-type,
+}
+
+@media (min-width:54em) {
+
+	header>a:last-of-type,
 	nav a {
-	  flex-direction:row;
-	  background-color: #F5F5F7;
-	  
+		flex-direction: row;
+		background-color: #F5F5F7;
+
 	}
-  }
+}
 
 
+/****************/
+/* JOUW STYLING */
+/****************/
 
-  h1 {
+
+h1 {
 	display: none;
-  }
-
-  
+}
 
 
-  img {
+
+
+img {
 	height: auto;
 	width: 3em;
-  }
-  main button {
+}
+
+main button {
 	border-radius: 5em;
 	width: 10em;
 	height: 3em;
-  }
+}
 
 
-  main button:nth-child(1n) {
+main button:nth-child(1n) {
 	background-color: #0071e3;
 	border: none;
 	color: white;
 	order: 0;
-	
-  }
-  main button:nth-child(2n){
-	background:transparent ;
+
+}
+
+main button:nth-child(2n) {
+	background: transparent;
 	border: .2em solid #0071e3;
 	color: #0071e3;
 	order: 0;
-	
-  }
-  ul {
+
+}
+
+ul {
 	list-style-type: none;
-  }
-  a {
+}
+
+a {
 	text-decoration: none;
 	color: black;
-  }
+}
 
-  main ul {
+main ul {
 	display: flex;
 	gap: 1em;
 	overflow-x: scroll;
 
-  }
+}
 
-  main ul img {
+main ul img {
 	height: 25em;
 	width: auto;
-  }
-  p {
+}
+
+p {
 	align-items: center;
-  }
+}
