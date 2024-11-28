@@ -19,51 +19,68 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text: #111;
-	--color-background: #eee;
-}
-
-body {
+	--color-text:#111;
+	--wit: #fff;
+	--color-background:#eee;
+	--zwart: #000000;
+	--grey: #F5F5F7;
 	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	line-height: 2em;
 	text-align: center;
-  }
+
+	--color-scheme: light dark;
+	
+	@media (prefers-color-scheme:dark) {
+		accent-color:var(--color-scheme) purple;
+		filter: invert();
+		pointer-events: stroke (purple);
+
+	}	
+
+}
+	
+
+
+
+
 
 
 
 /*************/
 /* DE HEADER */
 /*************/
+
 header {
 	display: flex;
-	justify-content: space-between;
-
-	background-color: #F5F5F7;
-
 }
 
 nav {
 	display: flex;
+	width: 100%;
+	background-color: var(--grey);
 }
+
 
 nav button:nth-of-type(1) {
-	position: relative;
 	order: 1;
-	border: none;
 	background: none;
-	color: black;
-	
-	
-	
-
+	color:var(--zwart);
 }
+nav button:nth-of-type(2) {
+	padding-left: 19em;
+}
+
 nav button {
 	border: none;
+	background-color: transparent;
+	padding-left: 1em;
 }
+
+
 
 nav.toonMenu button:first-of-type img {
 	content: url("../images/kruis.svg");
-	z-index: 999999999;
+	z-index: 999999999; /*blijft het boven alle lagen*/
 	position: relative;
 	width: 1.5em;
 	
@@ -72,25 +89,23 @@ nav.toonMenu button:first-of-type img {
 
 nav ul {
 	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-    top: 0;
 	translate: -99%;
 	transition: 1s;
-	
 
 }
 
 nav.toonMenu ul {
 	translate: 0;
-	background-color: #F5F5F7;
-	
+	background-color:var(--grey);
+	bottom: 0;
+	left: 0;
+	right: 0;
+    top: 0;
 	z-index: 99;
 	text-align: left;
 
 }
-
+/* dit is alles als je de menu opent*/
 nav.toonMenu ul li {
 	margin-left: 1em;
 	font-size: 20pt;
@@ -106,7 +121,7 @@ nav.toonMenu ul li {
 
 	}
 
-	nav button:nth-child(1) {
+	button:nth-of-type(1) {
 		display: none;
 
 	}
@@ -115,8 +130,6 @@ nav.toonMenu ul li {
 		translate: unset;
 		position: static;
 		background: none;
-		padding: 0;
-
 		display: flex;
 		flex-wrap: nowrap;
 		gap: 2em;
@@ -127,14 +140,14 @@ nav.toonMenu ul li {
 		border: none;
 		display: flex;
 		flex-direction: column;
-		right: 4em;
+		
+	}
+	nav button:nth-of-type(2) {
+		padding-left: 1em;
+		
 	}
 
-	header>a:last-of-type {
-		display: flex;
-		flex-direction: column;
 
-	}
 }
 
 @media (min-width:52.125em) {
@@ -143,6 +156,11 @@ nav.toonMenu ul li {
 	nav a {
 		flex-direction: row;
 		background-color: #F5F5F7;
+
+	}
+
+	nav button:nth-child(1) {
+		display: none;
 
 	}
 }
@@ -162,11 +180,9 @@ nav img {
 	width: 2em;
 }
 nav button:nth-of-type(2) img {
-	width: 1em;
+	width: 1.5em;
 	
 }
-
-
 
 ul {
 	list-style-type: none;
@@ -191,6 +207,7 @@ top: 2em;
 padding-bottom: 2em;
 }
 
+
 footer p {
 	padding-top: 1em;
 
@@ -201,7 +218,7 @@ footer ul {
 }
 footer p a {
 	text-decoration: underline;
-	color: blue;
+	color: #0066CC;
 }
 
 details {
@@ -214,4 +231,5 @@ summary {
 }
 footer details img {
 	width: 1.3em;
+	
 }
