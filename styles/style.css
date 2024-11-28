@@ -52,8 +52,9 @@ nav button:nth-of-type(1) {
 	border: none;
 	background: none;
 	color: black;
-	justify-content: right;
-	left:17em;
+	
+	left:19em;
+	
 
 }
 
@@ -64,9 +65,6 @@ nav.toonMenu button:first-of-type img {
 	
 }
 
-nav.button:first-of-type img {
-
-}
 
 nav ul {
 	position: fixed;
@@ -135,7 +133,7 @@ nav.toonMenu ul li {
 	}
 }
 
-@media (min-width:54em) {
+@media (min-width:52.125em) {
 
 	header>a:last-of-type,
 	nav a {
@@ -155,6 +153,45 @@ h1 {
 	display: none;
 }
 
+img {
+	height: auto;
+	width: 3em;
+}
 
 
 
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/****************/
+/* footer */
+/****************/
+
+footer  {
+text-align: left;
+padding-left: 2em;
+font-size: 10pt;
+position: relative;
+background-color: #F5F5F7;
+top: 2em;
+padding-bottom: 2em;
+}
+
+footer p {
+	padding-top: 1em;
+
+}
+
+footer ul {
+	text-decoration: underline;
+}
+footer p a {
+	text-decoration: underline;
+	color: blue;
+}
