@@ -53,15 +53,19 @@ nav button:nth-of-type(1) {
 	background: none;
 	color: black;
 	
-	left:19em;
+	
 	
 
+}
+nav button {
+	border: none;
 }
 
 nav.toonMenu button:first-of-type img {
 	content: url("../images/kruis.svg");
 	z-index: 999999999;
 	position: relative;
+	width: 1.5em;
 	
 }
 
@@ -72,11 +76,9 @@ nav ul {
 	left: 0;
 	right: 0;
     top: 0;
-	translate: -100%;
+	translate: -99%;
 	transition: 1s;
-    
-
-
+	
 
 }
 
@@ -90,10 +92,13 @@ nav.toonMenu ul {
 }
 
 nav.toonMenu ul li {
-	margin-left: 4em;
+	margin-left: 1em;
+	font-size: 20pt;
+	margin-top: 1.5em;
+	line-height: .4em;
+	font-weight: 500;
 
 }
-
 
 @media (min-width:38em) {
 	nav {
@@ -120,7 +125,6 @@ nav.toonMenu ul li {
 
 	nav a {
 		border: none;
-
 		display: flex;
 		flex-direction: column;
 		right: 4em;
@@ -153,9 +157,13 @@ h1 {
 	display: none;
 }
 
-img {
+nav img {
 	height: auto;
-	width: 3em;
+	width: 2em;
+}
+nav button:nth-of-type(2) img {
+	width: 1em;
+	
 }
 
 
@@ -194,4 +202,16 @@ footer ul {
 footer p a {
 	text-decoration: underline;
 	color: blue;
+}
+
+details {
+	border-top: 0.1em solid lightgray;
+
+}
+
+summary { 
+	list-style: none;
+}
+footer details img {
+	width: 1.3em;
 }
