@@ -1,0 +1,24 @@
+/******************/
+/* voor transitie */
+/******************/
+body {
+	overflow: hidden;
+	opacity: 0;
+	transform: translateY(2em);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+body.loaded {
+	opacity: 1;
+	transform: translateY(0);
+	overflow: auto;
+}
+
+/******************/
+/* voor thema's */
+/******************/
+
+li:has( :checked ) label:nth-of-type(2) {
+	background-image: url("../images/kerst.jpg");
+		object-fit: cover;
+        
+}

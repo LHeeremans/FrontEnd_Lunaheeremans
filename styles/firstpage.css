@@ -2,7 +2,9 @@ p {
     align-items: center;
 }
 
-
+h1{
+	display: none;
+}
 
 
 
@@ -57,6 +59,10 @@ main section a {
     text-align: center;
     align-self: start;
 }
+/*********************/
+/* standaard knoppen */
+/*********************/
+
 
 main section a:nth-of-type(1) {
     background-color: #0071e3;
@@ -73,7 +79,9 @@ main section a:nth-of-type(2n) {
     color: #0071e3;
     grid-column-start: 2;
 }
-
+/*********************/
+/* section 2 */
+/*********************/
 section:nth-of-type(2) {
     display: grid;
     grid-template-rows: max-content max-content 1fr;
@@ -119,7 +127,9 @@ main section:nth-of-type(2) a {
     text-align: center;
     align-self: start;
 }
-
+/*********************/
+/* section 3 */
+/*********************/
 section:nth-of-type(3) {
     display: grid;
     grid-template-rows: max-content max-content 1fr;
@@ -164,6 +174,10 @@ main section:nth-of-type(3) a {
     text-align: center;
     align-self: start;
 }
+/*********************/
+/* section 4 */
+/*********************/
+
 
 section:nth-of-type(4) {
     display: grid;
@@ -210,7 +224,10 @@ main section:nth-of-type(4) a {
     align-self: start;
 }
 
-/* foto's van de film */
+/*********************/
+/* section 5 */
+/*********************/
+/* flex zodat die niet basic section grid aanhoud. */
 
 section:nth-of-type(5) {
     display: flex;
@@ -218,6 +235,7 @@ section:nth-of-type(5) {
 section:nth-of-type(5) img {
     height: 50vh;
     width: 50vw;
+    
 }
 main ul {
     display: flex;

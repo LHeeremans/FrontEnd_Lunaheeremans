@@ -29,26 +29,28 @@
 	text-align: center;
 
 	--color-scheme: light dark;
-	
+
 }
+
 /******************/
-/* Zwart naar wit */
+/* Alle Zwart naar wit */
 /******************/
 @media (prefers-color-scheme:dark) {
-	section img:nth-child(1){
-		filter: invert(40%);
+	:root {
+		filter: invert(100%);
+
 	}
-
 }
 
 
+/*https://codepen.io/shooft/pen/eYwKLyZ?editors=1100*/
+
 @media (prefers-color-scheme:dark) {
-	section.full {
+	section:nth-of-type(3) img {
 		/* 1. content aanpassen */
-		content:url("https://assets.codepen.io/274456/img-unicorn-dark.png");
+		content: url("../images/header3_2.webp");
 	}
 }
-
 
 /*************/
 /* DE HEADER */
@@ -56,248 +58,239 @@
 
 header {
 	display: flex;
+	
 }
 
+nav {
+	display: flex;
+	width: 100%;
+	background-color: var(--grey);
+}
+
+header nav a {
+	margin-right: auto;
+}
+
+
+
+nav button:nth-of-type(1) {
+	order: 1;
+	background: none;
+}
+
+
+
+nav button {
+	border: none;
+	background-color: transparent;
+	margin-right: 1.5em;
+
+}
+
+
+
+nav.toonMenu button:first-of-type img {
+	content: url("../images/kruis.svg");
+	z-index: 999999999;
+	/*blijft het boven alle lagen*/
+	position: relative;
+	width: 1.5em;
+
+}
+
+nav img {
+	height: auto;
+	width: 2em;
+	padding-left: .4em;
+
+}
+
+nav button:nth-of-type(2) img {
+	width: 1.5em;
+
+}
+
+
+nav ul {
+	position: fixed;
+	translate: -99%;
+	transition: 1s;
+
+}
+
+nav.toonMenu ul {
+	translate: 0;
+	background-color: var(--grey);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	text-align: left;
+
+}
+
+/* dit is alles als je de menu opent*/
+nav.toonMenu ul li {
+	margin-left: 1em;
+	font-size: 20pt;
+	margin-top: 1.5em;
+	line-height: .4em;
+	font-weight: 500;
+
+}
+
+@media (min-width:38em) {
 	nav {
-		display: flex;
-		width: 100%;
-		background-color: var(--grey);
-	}
-
-	header nav a{
-		margin-right: auto;
-	}
-	
-
-
-	nav button:nth-of-type(1) {
-		order: 1;
-		background: none;
-	}
-
-	
-
-	nav button {
-		border: none;
-		background-color: transparent;
-		margin-right: 1.5em;
-		
-	}
-
-
-
-	nav.toonMenu button:first-of-type img {
-		content: url("../images/kruis.svg");
-		z-index: 999999999;
-		/*blijft het boven alle lagen*/
-		position: relative;
-		width: 1.5em;
+		order: 0;
 
 	}
 
-	nav img {
-		height: auto;
-		width: 2em;
-		padding-left: .4em;
-		
-	}
-
-	nav button:nth-of-type(2) img {
-		width: 1.5em;
+	button:nth-of-type(1) {
+		display: none;
 
 	}
-
 
 	nav ul {
-		position: fixed;
-		translate: -99%;
-		transition: 1s;
-
-	}
-
-	nav.toonMenu ul {
-		translate: 0;
-		background-color: var(--grey);
-		bottom: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-		z-index: 99;
-		text-align: left;
-
-	}
-
-	/* dit is alles als je de menu opent*/
-	nav.toonMenu ul li {
-		margin-left: 1em;
-		font-size: 20pt;
-		margin-top: 1.5em;
-		line-height: .4em;
-		font-weight: 500;
-
-	}
-
-	@media (min-width:38em) {
-		nav {
-			order: 0;
-
-		}
-
-		button:nth-of-type(1) {
-			display: none;
-
-		}
-
-		nav ul {
-			translate: unset;
-			position: static;
-			background: none;
-			display: flex;
-			flex-wrap: nowrap;
-			gap: 2em;
-
-		}
-
-		nav a {
-			border: none;
-			display: flex;
-			flex-direction: column;
-
-		}
-
-		nav button:nth-of-type(2) {
-			padding-left: 1em;
-
-		}
-
-
-	}
-
-	@media (min-width:52.125em) {
-
-		header>a:last-of-type,
-		nav a {
-			flex-direction: row;
-			background-color: #F5F5F7;
-
-		}
-
-		nav button:nth-child(1) {
-			display: none;
-
-		}
-	}
-
-	/****************/
-	/* zoekbalk */
-	/****************/
-	/* Zoekknop styling (tweede button in nav) */
-	nav>button:nth-of-type(2) img {
-		width: 24px;
-		height: 24px;
-		cursor: pointer;
-	}
-
-	/* Zoekformulier standaard verborgen */
-	nav>li:last-of-type {
-		position: fixed;
-		top: 2em;
-		left: 0;
-		background-color: var(--grey);
-		padding: 1rem;
-		z-index: 100;
-		visibility: hidden;
-		width: 100%;
-		height: 100%;
-		list-style: none;
-	}
-
-	/* Zoekformulier zichtbaar maken */
-	nav[data-open="true"]>li:last-of-type {
-		opacity: 2;
-		visibility: visible;
-	}
-
-	/* Zoekformulier input styling */
-	nav>li:last-of-type input {
-		width: 100%;
-		padding: 0.5rem;
-		font-size: 24pt;
-		border: none;
-		outline: none;
-		background-color: transparent;
-		margin-top: 1.3em;
-		margin-left: 1em;
-	}
-
-	nav.zoekKnop button:first-of-type(2) img {
-		content: url("../images/kruis.svg");
-		z-index: 999999999;
-		/*blijft het boven alle lagen*/
-		position: relative;
-		width: 1.5em;
-
-	}
-
-
-	/****************/
-	/* JOUW STYLING */
-	/****************/
-
-
-	h1 {
-		display: none;
-	}
-
-
-	ul {
-		list-style-type: none;
-	}
-
-	a {
-		text-decoration: none;
-		color: black;
-	}
-
-	/****************/
-	/* footer */
-	/****************/
-
-	footer {
-		text-align: left;
-		padding-left: 2em;
-		font-size: 10pt;
-		position: relative;
-		background-color: #F5F5F7;
-		top: 2em;
-		padding-bottom: 2em;
+		translate: unset;
+		position: static;
+		background: none;
 		display: flex;
-	}
-
-
-	footer p {
-		padding-top: 1em;
+		flex-wrap: nowrap;
+		gap: 2em;
 
 	}
 
-	footer ul {
-		text-decoration: underline;
-	}
-
-	footer p a {
-		text-decoration: underline;
-		color: #0066CC;
-	}
-
-	details {
-		border-top: 0.1em solid lightgray;
+	nav a {
+		border: none;
+		display: flex;
+		flex-direction: column;
 
 	}
 
-	summary {
-		list-style-type: none;
+	nav button:nth-of-type(2) {
+		padding-left: 1em;
+
 	}
 
-	footer details img {
-		width: 1em;
+
+}
+
+@media (min-width:52.125em) {
+
+	header>a:last-of-type,
+	nav a {
+		flex-direction: row;
+		background-color: #F5F5F7;
+
 	}
+
+	nav button:nth-child(1) {
+		display: none;
+
+	}
+}
+
+/****************/
+/* zoekbalk */
+/****************/
+/* Zoekknop styling (tweede button in nav) */
+nav>button:nth-of-type(2) img {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+/* Zoekformulier standaard verborgen */
+nav>li:last-of-type {
+	position: fixed;
+	top: 2em;
+	left: 0;
+	background-color: var(--grey);
+	padding: 1rem;
+	z-index: 100;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	list-style: none;
+}
+
+/* Zoekformulier zichtbaar maken */
+nav[data-open="true"]>li:last-of-type {
+	opacity: 2;
+	visibility: visible;
+}
+
+/* Zoekformulier input styling */
+nav label:nth-of-type(1) input {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 24pt;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	margin-top: 1.3em;
+	margin-left: 1em;
+}
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/****************/
+/* footer */
+/****************/
+
+footer {
+	text-align: left;
+	padding-left: 2em;
+	font-size: 10pt;
+	position: relative;
+	background-color: #F5F5F7;
+	top: 2em;
+	padding-bottom: 2em;
+	display: flex;
+}
+
+
+footer p {
+	padding-top: 1em;
+
+}
+
+footer ul {
+	text-decoration: underline;
+}
+
+footer p a {
+	text-decoration: underline;
+	color: #0066CC;
+}
+
+details {
+	border-top: 0.1em solid lightgray;
+
+}
+
+summary {
+	list-style-type: none;
+}
+
+footer details img {
+	width: 1em;
+	align-items: end;
+	justify-content: right;
+	margin-right: auto;
+}

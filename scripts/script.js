@@ -23,3 +23,6 @@ zoekKnop.addEventListener("click", () => {
     nav.setAttribute("data-open", !isOpen);
 });
 
+document.addEventListener("DOMContentLoaded",  () => {
+  document.body.classList.add("loaded");
+});
