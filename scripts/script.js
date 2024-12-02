@@ -16,7 +16,7 @@ function toggleMenu() {
 const zoekKnop = document.querySelector("nav > button:nth-of-type(2)");
 const nav = document.querySelector("nav");
 
-// Voeg klikfunctionaliteit toe aan de knop
+
 zoekKnop.addEventListener("click", () => {
     // Toggle de 'data-open' toestand
     const isOpen = nav.getAttribute("data-open") === "true";

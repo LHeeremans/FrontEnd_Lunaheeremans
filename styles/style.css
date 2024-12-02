@@ -19,9 +19,9 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text: #111;
 	--wit: #fff;
-	--color-background:#eee;
+	--color-background: #eee;
 	--zwart: #000000;
 	--grey: #F5F5F7;
 	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -29,22 +29,13 @@
 	text-align: center;
 
 	--color-scheme: light dark;
-	
 	@media (prefers-color-scheme:dark) {
+		accent-color:var(--color-scheme) purple;
 		filter: invert();
-		pointer-events: stroke (purple);
-		color: var(--zwart);
-		background-color: var(--zwart);
+		
 
-	}	
-
+	}
 }
-	
-
-
-
-
-
 
 
 /*************/
@@ -55,230 +46,244 @@ header {
 	display: flex;
 }
 
-nav {
-	display: flex;
-	width: 100%;
-	background-color: var(--grey);
-}
-
-
-nav button:nth-of-type(1) {
-	order: 1;
-	background: none;
-	color:var(--zwart);
-}
-nav button:nth-of-type(2) {
-	padding-left: 19em;
-}
-
-nav button {
-	border: none;
-	background-color: transparent;
-	padding-left: 1em;
-}
-
-
-
-nav.toonMenu button:first-of-type img {
-	content: url("../images/kruis.svg");
-	z-index: 999999999; /*blijft het boven alle lagen*/
-	position: relative;
-	width: 1.5em;
-	
-}
-
-
-nav ul {
-	position: fixed;
-	translate: -99%;
-	transition: 1s;
-
-}
-
-nav.toonMenu ul {
-	translate: 0;
-	background-color:var(--grey);
-	bottom: 0;
-	left: 0;
-	right: 0;
-    top: 0;
-	z-index: 99;
-	text-align: left;
-
-}
-/* dit is alles als je de menu opent*/
-nav.toonMenu ul li {
-	margin-left: 1em;
-	font-size: 20pt;
-	margin-top: 1.5em;
-	line-height: .4em;
-	font-weight: 500;
-
-}
-
-@media (min-width:38em) {
 	nav {
-		order: 0;
+		display: flex;
+		width: 100%;
+		background-color: var(--grey);
+	}
+
+
+	header nav a{
+		margin-right: auto;
+	}
+	
+
+
+	nav button:nth-of-type(1) {
+		order: 1;
+		background: none;
+		color: var(--zwart);
+	}
+
+	
+
+	nav button {
+		border: none;
+		background-color: transparent;
+		padding-left: 1em;
+	}
+
+
+
+	nav.toonMenu button:first-of-type img {
+		content: url("../images/kruis.svg");
+		z-index: 999999999;
+		/*blijft het boven alle lagen*/
+		position: relative;
+		width: 1.5em;
 
 	}
 
-	button:nth-of-type(1) {
-		display: none;
-
-	}
 
 	nav ul {
-		translate: unset;
-		position: static;
-		background: none;
-		display: flex;
-		flex-wrap: nowrap;
-		gap: 2em;
+		position: fixed;
+		translate: -99%;
+		transition: 1s;
 
 	}
 
-	nav a {
+	nav.toonMenu ul {
+		translate: 0;
+		background-color: var(--grey);
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 99;
+		text-align: left;
+
+	}
+
+	/* dit is alles als je de menu opent*/
+	nav.toonMenu ul li {
+		margin-left: 1em;
+		font-size: 20pt;
+		margin-top: 1.5em;
+		line-height: .4em;
+		font-weight: 500;
+
+	}
+
+	@media (min-width:38em) {
+		nav {
+			order: 0;
+
+		}
+
+		button:nth-of-type(1) {
+			display: none;
+
+		}
+
+		nav ul {
+			translate: unset;
+			position: static;
+			background: none;
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 2em;
+
+		}
+
+		nav a {
+			border: none;
+			display: flex;
+			flex-direction: column;
+
+		}
+
+		nav button:nth-of-type(2) {
+			padding-left: 1em;
+
+		}
+
+
+	}
+
+	@media (min-width:52.125em) {
+
+		header>a:last-of-type,
+		nav a {
+			flex-direction: row;
+			background-color: #F5F5F7;
+
+		}
+
+		nav button:nth-child(1) {
+			display: none;
+
+		}
+	}
+
+	/****************/
+	/* zoekbalk */
+	/****************/
+	/* Zoekknop styling (tweede button in nav) */
+	nav>button:nth-of-type(2) img {
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+	}
+
+	/* Zoekformulier standaard verborgen */
+	nav>li:last-of-type {
+		position: fixed;
+		top: 2em;
+		left: 0;
+		background-color: var(--grey);
+		padding: 1rem;
+		z-index: 100;
+		visibility: hidden;
+		width: 100%;
+		height: 100%;
+		list-style: none;
+	}
+
+	/* Zoekformulier zichtbaar maken */
+	nav[data-open="true"]>li:last-of-type {
+		opacity: 2;
+		visibility: visible;
+	}
+
+	/* Zoekformulier input styling */
+	nav>li:last-of-type input {
+		width: 100%;
+		padding: 0.5rem;
+		font-size: 24pt;
 		border: none;
-		display: flex;
-		flex-direction: column;
-		
-	}
-	nav button:nth-of-type(2) {
-		padding-left: 1em;
-		
+		outline: none;
+		background-color: transparent;
+		margin-top: 1.3em;
+		margin-left: 1em;
 	}
 
-
-}
-
-@media (min-width:52.125em) {
-
-	header>a:last-of-type,
-	nav a {
-		flex-direction: row;
-		background-color: #F5F5F7;
+	nav.zoekKnop button:first-of-type(2) img {
+		content: url("../images/kruis.svg");
+		z-index: 999999999;
+		/*blijft het boven alle lagen*/
+		position: relative;
+		width: 1.5em;
 
 	}
 
-	nav button:nth-child(1) {
+
+	/****************/
+	/* JOUW STYLING */
+	/****************/
+
+
+	h1 {
 		display: none;
+	}
+
+	nav img {
+		height: auto;
+		width: 2em;
+	}
+
+	nav button:nth-of-type(2) img {
+		width: 1.5em;
 
 	}
-}
-/****************/
-/* zoekbalk */
-/****************/
-/* Zoekknop styling (tweede button in nav) */
-nav > button:nth-of-type(2) img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
 
-/* Zoekformulier standaard verborgen */
-nav > li:last-of-type {
-    position: fixed;
-    top: 2em;
-    left: 0;
-    background-color: var(--grey);
-    padding: 1rem;
-    z-index: 100;
-    visibility: hidden;
-	width: 100%;
-	height: 100%;
-	list-style: none;
-}
+	ul {
+		list-style-type: none;
+	}
 
-/* Zoekformulier zichtbaar maken */
-nav[data-open="true"] > li:last-of-type {
-    opacity: 2;
-    visibility: visible;
-}
+	a {
+		text-decoration: none;
+		color: black;
+	}
 
-/* Zoekformulier input styling */
-nav > li:last-of-type input {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 24pt;
-	border: none;
-	outline: none;
-	background-color: transparent;
-	margin-top: 1.3em;
-	margin-left: 1em;
-}
-nav.zoekKnop button:first-of-type(2) img {
-	content: url("../images/kruis.svg");
-	z-index: 999999999; /*blijft het boven alle lagen*/
-	position: relative;
-	width: 1.5em;
-	
-}
+	/****************/
+	/* footer */
+	/****************/
+
+	footer {
+		text-align: left;
+		padding-left: 2em;
+		font-size: 10pt;
+		position: relative;
+		background-color: #F5F5F7;
+		top: 2em;
+		padding-bottom: 2em;
+		display: flex;
+	}
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+	footer p {
+		padding-top: 1em;
 
+	}
 
-h1 {
-	display: none;
-}
+	footer ul {
+		text-decoration: underline;
+	}
 
-nav img {
-	height: auto;
-	width: 2em;
-}
-nav button:nth-of-type(2) img {
-	width: 1.5em;
-	
-}
+	footer p a {
+		text-decoration: underline;
+		color: #0066CC;
+	}
 
-ul {
-	list-style-type: none;
-}
+	details {
+		border-top: 0.1em solid lightgray;
 
-a {
-	text-decoration: none;
-	color: black;
-}
+	}
 
-/****************/
-/* footer */
-/****************/
+	summary {
+		list-style-type: none;
+	}
 
-footer  {
-text-align: left;
-padding-left: 2em;
-font-size: 10pt;
-position: relative;
-background-color: #F5F5F7;
-top: 2em;
-padding-bottom: 2em;
-}
-
-
-footer p {
-	padding-top: 1em;
-
-}
-
-footer ul {
-	text-decoration: underline;
-}
-footer p a {
-	text-decoration: underline;
-	color: #0066CC;
-}
-
-details {
-	border-top: 0.1em solid lightgray;
-
-}
-
-summary { 
-	list-style: none;
-}
-footer details img {
-	width: 1em;
-	right: 4em;
-}
+	footer details img {
+		width: 1em;
+	}
