@@ -41,7 +41,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   home apple 
 <<<<<<< HEAD
-  <img src="../readme-images/apple_home.png" width="350px" alt="homepagina web">
+  <img src="readme-images/apple_home.png" width="350px" alt="homepagina web">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   support apple
