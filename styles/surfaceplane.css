@@ -18,7 +18,8 @@ body.loaded {
 /******************/
 
 li:has( :checked ) {
+
 	background-image: url("../images/kerst.jpg");
 		object-fit: cover;
-        
+    
 }
