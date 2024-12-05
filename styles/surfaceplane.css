@@ -17,9 +17,8 @@ body.loaded {
 /* voor thema's */
 /******************/
 
-li:has( :checked ) {
+*:has( :checked ) {
 
-	background-image: url("../images/kerst.jpg");
-		object-fit: cover;
-    
+	background-image: url("../images/kerst.jpg");	
+    object-fit: cover;
 }
