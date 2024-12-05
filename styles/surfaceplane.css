@@ -1,24 +1,29 @@
 /******************/
 /* voor transitie */
 /******************/
-body {
-	overflow: hidden;
-	opacity: 0;
-	transform: translateY(2em);
-	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+body.down {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(2em);
+    translate:0 2em;
+    transition: 
+    opacity 1s ease-in-out, 
+    transform 1s ease-in-out;
 }
+
 body.loaded {
-	opacity: 1;
-	transform: translateY(0);
-	overflow: auto;
+    opacity: 1;
+    transform: translateY(0);
+    translate:0 0;
+    overflow: auto;
 }
 
 /******************/
 /* voor thema's */
 /******************/
 
-*:has( :checked ) {
-
-	background-image: url("../images/kerst.jpg");	
+*:has( :checked) {
+    background-image: url("../images/kerst.jpg");
     object-fit: cover;
 }
+

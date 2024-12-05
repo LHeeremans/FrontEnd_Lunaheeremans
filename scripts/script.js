@@ -25,6 +25,11 @@ zoekKnop.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded",  () => {
   document.body.classList.add("loaded");
+
+  document.body.addEventListener("transitionend", () => {
+    document.body.className = "";
+  });
+
 });
 
 

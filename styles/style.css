@@ -10,6 +10,13 @@
 
 }
 
+body{
+	/* overflow-x:hidden; */
+}
+
+* {
+	/* border: 1px solid red; */
+}
 
 
 
@@ -40,8 +47,8 @@
 /* Alle Zwart naar wit */
 /******************/
 @media (prefers-color-scheme:dark) {
-	nav{
-		filter: invert(100%);
+	body {
+		background-color: #000000;
 	}
 	h2 {
 		filter: invert(100%);
@@ -50,29 +57,39 @@
 	h3 {
 		filter: invert(100%);
 	}
+
 	section:nth-of-type(1) img {
 		filter: invert(100%);
 	}
 	section:nth-of-type(2) img {
 		filter: invert(100%);
 	}
-}
-
-
-/*https://codepen.io/shooft/pen/eYwKLyZ?editors=1100*/
-
-@media (prefers-color-scheme:dark) {
 	section:nth-of-type(3) img {
 		/* 1. content aanpassen */
-		content: url("../images/header3_2.jpeg");
+		content: url("../images/header_2.2.jpeg");
 	}
-}
-@media (prefers-color-scheme:dark) {
-	section:nth-of-type(3) img {
+	section:nth-of-type(4) img {
 		/* 1. content aanpassen */
-		content: url("../images/header3_2.webp");
+		content: url("../images/mcbook2.webp");
 	}
+	section:nth-of-type(5) img {
+		filter: brightness(75%);
+		
+	}
+	 main a {
+		filter: invert(100%);
+	}
+	button {
+		filter: invert(100%);
+	}
+
+	footer {
+		filter: invert(100%);
+	}
+
 }
+
+
 /*************/
 /* DE HEADER */
 /*************/
@@ -81,7 +98,10 @@
 
 header {
 	display: flex;
-	
+	position: sticky;
+	top:0;
+
+	z-index: 99;
 }
 
 nav {
@@ -90,6 +110,7 @@ nav {
 	background-color: var(--grey);
 	
 }
+
 
 header nav a {
 	margin-right: auto;
@@ -111,17 +132,6 @@ nav button {
 
 }
 
-
-
-nav.toonMenu button:first-of-type img {
-	content: url("../images/kruis.svg");
-	z-index: 999999999;
-	/*blijft het boven alle lagen*/
-	position: relative;
-	width: 1.5em;
-
-}
-
 nav img {
 	height: auto;
 	width: 2em;
@@ -134,24 +144,37 @@ nav button:nth-of-type(2) img {
 
 }
 
-
-nav ul {
-	position: fixed;
-	translate: -99%;
-	transition: 1s;
+nav.toonMenu button:first-of-type img {
+	content: url("../images/kruis.svg");
+	z-index: 999999999;
+	/* blijft het boven alle lagen */
+	position: relative;
+	width: 1.5em;
 
 }
 
-nav.toonMenu ul {
-	translate: 0;
-	background-color: var(--grey);
+
+nav ul {
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 99;
+
 	text-align: left;
 
+	background-color: var(--grey);
+
+	transition: 0.3s;
+	translate: 0 -100%;
+
+	
+}
+
+nav.toonMenu ul {
+	translate: 0;
+	
+	
 }
 
 /* dit is alles als je de menu opent*/
@@ -227,7 +250,7 @@ nav>button:nth-of-type(2) img {
 }
 
 /* Zoekformulier standaard verborgen */
-nav>li:last-of-type {
+nav>form:last-of-type {
 	position: fixed;
 	top: 2em;
 	left: 0;
@@ -241,7 +264,7 @@ nav>li:last-of-type {
 }
 
 /* Zoekformulier zichtbaar maken */
-nav[data-open="true"]>li:last-of-type {
+nav[data-open="true"]>form {
 	opacity: 2;
 	visibility: visible;
 }
@@ -254,8 +277,6 @@ nav label:nth-of-type(1) input {
 	border: none;
 	outline: none;
 	background-color: transparent;
-	margin-top: 1.3em;
-	margin-left: 1em;
 }
 
 
