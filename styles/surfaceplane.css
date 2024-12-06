@@ -5,16 +5,16 @@ body.down {
     overflow: hidden;
     opacity: 0;
     transform: translateY(2em);
-    translate:0 2em;
-    transition: 
-    opacity 1s ease-in-out, 
-    transform 1s ease-in-out;
+    translate: 0 2em;
+    transition:
+        opacity 1s ease-in-out,
+        transform 1s ease-in-out;
 }
 
 body.loaded {
     opacity: 1;
     transform: translateY(0);
-    translate:0 0;
+    translate: 0 0;
     overflow: auto;
 }
 
@@ -22,8 +22,34 @@ body.loaded {
 /* voor thema's */
 /******************/
 
-*:has( :checked) {
-    background-image: url("../images/kerst.jpg");
-    object-fit: cover;
-}
+*:has( :checked ){
+    main {
+        background-image: url("../images/sneeuw.gif");
+        object-fit: cover;
+    }
+    
+    nav>form:last-of-type {
+        background-image: url("../images/sneeuw.gif");
+        object-fit: cover;
+        background-color: var(--wit);
+    }
+    nav {
+        background-color: red;
+    }
+     footer {
+        background-color: red;
+    }
+    a {
+        filter: invert(100%);
+    }
+    main img {
+        opacity: 40%;
 
+    }
+    main section {
+        background-color: transparent;
+    }
+    
+
+
+}
