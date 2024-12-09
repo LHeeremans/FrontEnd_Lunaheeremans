@@ -149,11 +149,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Alycia    | Iris          | Luna   |      |
-  | dropdown           | dropdown             |grid        | 
-  | navigatie  | kleurverandering            | animatie    | 
+  | Alycia    | Iris  | Luna   |
+  | dropdown  | dropdown |grid        | 
+  | navigatie  | kleurverandering| animatie    | 
   | flexbox en grid | - | responsive | 
-  | ...            | ...                | ...          | 
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -188,26 +188,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="readme-images/laatstevooruitgang.png" width="375px" alt="tussenvooruitzicht">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Joost     | Iris  | Luna  |
+  |svg path   | dialog| slideshow| 
+  | start/stop muziek| pop up| thema's   
+  | fonts | | nog een punt | 
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ik heb besproken hoe ik een slideshow goed kan maken.
+  - ik moet een stukje code aan begin van html zetten zodat safari en chrome hetzelfde zijn.
 
 </details>
 
