@@ -26,6 +26,7 @@ body.loaded {
     main {
         background-image: url("../images/sneeuw.gif");
         object-fit: cover;
+        
     }
     
     nav>form:last-of-type {
@@ -49,7 +50,9 @@ body.loaded {
     main section {
         background-color: transparent;
     }
-    
 
+    main video {
+        opacity: 100%;   
+    }
 
 }
