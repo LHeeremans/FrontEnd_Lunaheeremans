@@ -52,7 +52,8 @@ body.loaded {
     }
 
     main video {
-        opacity: 100%;   
+        transition: ease-in;
+        
     }
 
 }
