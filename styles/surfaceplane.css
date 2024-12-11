@@ -1,3 +1,37 @@
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* witte modus */
+	--color-text: #111;
+	--color-text2: #fff;
+	--color-background: #eee;
+	--zwart: #000000;
+	--color-grey: #F5F5F7;
+	--color-button: #0071e3;
+
+
+
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	line-height: 2em;
+	text-align: center;
+
+	--color-scheme: light dark;
+	/* zwarte modus */
+	--color-text: #111;
+	--color-text2: #fff;
+	--color-background: #111;
+	--zwart: #000000;
+	--color-grey: #F5F5F7;
+	--color-button: darkblue;
+
+	/* kerst thema */
+	--color-kerst: red;
+
+
+}
+
+
 /******************/
 /* voor transitie */
 /******************/
@@ -27,21 +61,24 @@ body.loaded {
         background-image: url("../images/sneeuw.gif");
         object-fit: cover;
         
+        
     }
     
     nav>form:last-of-type {
         background-image: url("../images/sneeuw.gif");
         object-fit: cover;
         background-color: var(--wit);
+
     }
     nav {
-        background-color: red;
+        background-color: var(--color-kerst);
     }
      footer {
-        background-color: red;
+        background-color: var(--color-kerst);
     }
     a {
         filter: invert(100%);
+    
     }
     main img {
         opacity: 40%;
@@ -51,9 +88,19 @@ body.loaded {
         background-color: transparent;
     }
 
-    main video {
-        transition: ease-in;
-        
-    }
+
 
 }
+/*********/
+/* video */
+/*********/
+
+video{
+	width: 80vw;
+	height: auto;
+	cursor: pointer;
+}
+
+/************/
+/* feedback */
+/************/

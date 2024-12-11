@@ -1,11 +1,115 @@
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* witte modus */
+	--color-text: #111;
+	--color-text2: #fff;
+	--color-background: #eee;
+	--zwart: #000000;
+	--color-grey: #F5F5F7;
+	--color-blue: #0071e3;
+
+
+
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	line-height: 2em;
+	text-align: center;
+
+	--color-scheme: light dark;
+	/* zwarte modus */
+	--color-text: #111;
+	--color-text2: #fff;
+	--color-background2: black;
+	--zwart: #000000;
+	--color-grey: #F5F5F7;
+	
+
+	/* kerst thema */
+	--color-kerst: red;
+
+
+}
+
+
+
+@media (prefers-color-scheme:dark) {
+    nav {
+        background-color: var(--color-background2);
+    }
+
+    nav ul {
+        filter: invert(100%);
+    }
+
+    nav img {
+        filter: invert(100%);
+    }
+
+    body {
+        background-color: var(--color-background2);
+    }
+
+    h1 {
+        color: var(--color-text2);
+    }
+
+    h3 {
+        filter: invert(100%);
+    }
+
+    p {
+        filter: invert(0%);
+    }
+
+    section:nth-of-type(1) img {
+        filter:brightness(70%)
+    }
+
+    main section:nth-of-type(2) li a {
+        color: var(--color-text2);
+    }
+
+    section:nth-of-type(3) li  {
+       filter: invert();
+    }
+    section:nth-of-type(3) a  {
+        filter: grayscale(100%);
+     }
+
+    section:nth-of-type(4) h2 {
+        color: var(--color-text2);
+    }
+    section:nth-of-type(5), section:nth-of-type(8) ul {
+        background-color: var(--color-background2);
+    }
+    section:nth-of-type(5), section:nth-of-type(6) li {
+    filter: invert(100);
+    }
+   
+
+    
+
+
+    footer {
+        filter: invert(100%);
+    
+    }
+
+
+
+}
+
+
+
 main {
     align-items: center;
 }
 
 
-/*********************/
+/**************************/
 /* eerste heading foto+h1 */
-/*********************/
+/**************************/
 
 section h1 {
     grid-row-start: 2;
@@ -17,7 +121,7 @@ section h1 {
 
 main a {
     text-decoration: none;
-    color: var(--zwart);
+    color: var(--color-text);
     position: relative;
 }
 
@@ -80,6 +184,8 @@ main section:nth-of-type(2) ul li a img {
     object-fit: cover;
 }
 
+    
+
 
 
 /*********************/
@@ -94,7 +200,7 @@ main a::after {
     bottom: 0;
     width: 0;
     height: .1em;
-    background-color: var(--zwart);
+    background-color: var(--color-text);
     transition: width 0.3s;
 }
 
@@ -121,9 +227,9 @@ main section:nth-of-type(3) li {
     padding-right: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
-    background-color: var(--grey);
+    background-color: var(--color-grey);
     border-radius: 1em;
-    box-shadow: .1em .1em 1em var(--grey);
+    box-shadow: .1em .1em 1em var(--color-grey);
     height: 10em;
 }
 main section:nth-of-type(3) li:hover {
@@ -135,7 +241,7 @@ main section:nth-of-type(3) li:hover {
 
 
 main section:nth-of-type(3) a {
-    color: var(--blue);
+    color: var(--color-blue);
 }
 
 main section:nth-of-type(3) ul {
@@ -178,7 +284,7 @@ main section:nth-of-type(4) input {
     padding-top: 1em;
     padding-bottom: 1em;
     border-radius: .6em;
-    border: solid var(--grey);
+    border: solid var(--color-grey);
     padding-left: 2em;
     font-size: 14pt;
 }
@@ -196,8 +302,8 @@ main section:nth-of-type(5) p {
 
 
 main section:nth-of-type(5) a {
-    background-color: var(--zwart);
-    color: var(--wit);
+    background-color: var(--color-text);
+    color: var(--color-text2);
     border-radius: 2em;
     padding: .5em;
     
@@ -211,11 +317,11 @@ main section:nth-of-type(5) img {
 }
 
 main section:nth-of-type(5)  {
-    background-color: var(--grey);
+    background-color: var(--color-grey);
 }
 
 main section:nth-of-type(5) li  {
-    background-color: var(--wit);
+    background-color: var(--color-text2);
 }
 
 main section:nth-of-type(5) ul  {
@@ -230,7 +336,7 @@ main section:nth-of-type(5) ul  {
 /******************/
 
 main section:nth-of-type(6) {
-    background-color: var(--grey);
+    background-color: var(--color-grey);
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -239,7 +345,7 @@ main section:nth-of-type(6) li {
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 2em;
-    background-color: var(--wit);
+    background-color: var(--color-text2);
     border-radius: 1em;
 }
 
@@ -270,4 +376,8 @@ main section:nth-of-type(6) img {
 
 
 
-
+*:has( :checked ){ 
+    main section:nth-of-type(3) {
+        transform: rotate(4deg);
+    }
+}
