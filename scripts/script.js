@@ -102,14 +102,16 @@ setTimeout(function() {
 /*******************************/
 /* poging lineheight aanpassen */
 /*******************************/
-
-/* Dit heb ik van chatGpt/ prompt: hoe maak ik een slider om de lettergrootte aan te passen?*/
+// Haal de slider en het element op waar we de waarde willen tonen
 const slider = document.getElementById("fontSizeSlider");
-const tekst = document.querySelectorAll("h1, h2, h3, p"); 
+const paragraphs = document.querySelectorAll("h1, h2, h3, p"); 
 
+// Event listener voor de slider
 slider.addEventListener("input", function() {
-    const value = slider.value + "pt"; 
-    paragraphs.forEach(tekst => {
+    const value = slider.value + "px"; // Haal de waarde van de slider op en voeg "px" toe
+    // Pas de font-size van alle geselecteerde paragrafen aan
+    paragraphs.forEach(paragraph => {
         paragraph.style.fontSize = value;
     });
+    sliderValue.textContent = `Lettergrootte: ${value}`; // Toon de huidige waarde van de slider in een <p>
 });

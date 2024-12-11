@@ -74,7 +74,8 @@ body.loaded {
         background-color: var(--color-kerst);
     }
      footer {
-        background-color: var(--color-kerst);
+        background-image: url("../images/sneeuwfooter.jpg");
+        background-size: cover;
     }
     a {
         filter: invert(100%);
@@ -100,7 +101,3 @@ video{
 	height: auto;
 	cursor: pointer;
 }
-
-/************/
-/* feedback */
-/************/

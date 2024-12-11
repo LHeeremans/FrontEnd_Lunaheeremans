@@ -41,9 +41,11 @@
 	--zwart: #000000;
 	--color-grey: #F5F5F7;
 	--color-button2: darkblue;
+	--footer-border-color: rgba(0, 0, 0, 0.16);
 
 	/* kerst thema */
 	--color-kerst: red;
+	--color-text2: #fff;
 
 
 }
@@ -288,7 +290,7 @@ footer ul {
 
 
 details {
-	border-top: 0.1em solid var(--color-grey);
+	border-top: 0.1em solid var(--footer-border-color);
 
 }
 
@@ -301,4 +303,12 @@ summary {
 	display: flex;
 	justify-content: space-between;
 }
+
+
+
+
+
+
+
+
 
