@@ -246,9 +246,9 @@ dingen dat ik niet heb en waarom niet:
 
   ### Je uitkomst - karakteristiek screenshots:
   dit is mijn eerste pagina
-  <img src="readme-images/eerstepagina_eind" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eerstepagina_eind.png" width="375px" alt="uitomst opdracht 1">
   dit is mijn tweede pagina
-   <img src="readme-images/pagina2_nagemaakt" width="375px" alt="top">
+   <img src="readme-images/pagina2_nagemaakt.png" width="375px" alt="top">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -257,13 +257,13 @@ dingen dat ik niet heb en waarom niet:
 dark en light modus geleerd
   <img src="readme-images/darklight.png" width="375px" alt="top">
 Grid geleerd
- <img src="readme-images/grid_voorbeeld1" width="375px" alt="top">
-  <img src="readme-images/grid_voorbeeld2" width="375px" alt="top">
+ <img src="readme-images/grid_voorbeeld1.png" width="375px" alt="top">
+  <img src="readme-images/grid_voorbeeld2.png" width="375px" alt="top">
   
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 het is mij niet gelukt om een slidehow goed te maken, ik vond het heel moeilijk om zoveel elementen te hebben in een section. ik had al moeite met grid en dat erbij vond ik echt te moeilijk en kreeg ik niet voor elkaar, nu gaat het gewoon op tijd. 
-  <img src="readme-images/slideshow" width="375px" alt="bummer">
+  <img src="readme-images/slideshow.png" width="375px" alt="bummer">
 </details>
 
 
