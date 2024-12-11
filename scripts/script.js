@@ -102,7 +102,8 @@ setTimeout(function() {
 /*******************************/
 /* poging lineheight aanpassen */
 /*******************************/
-// Haal de slider en het element op waar we de waarde willen tonen
+/*dit heb ik van chatgpt/ prompt: hoe maak ik een slider voor het aanpassen van de letter grootte? https://chatgpt.com*/
+
 const slider = document.getElementById("fontSizeSlider");
 const paragraphs = document.querySelectorAll("h1, h2, h3, p"); 
 
