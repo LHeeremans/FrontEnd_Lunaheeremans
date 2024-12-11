@@ -11,7 +11,7 @@
 	--color-button: #0071e3;
 
 
-
+    /* standaard lettertype */
 	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	line-height: 2em;
 	text-align: center;
@@ -35,6 +35,7 @@
 /******************/
 /* voor transitie */
 /******************/
+/* pagina gaat van beneden naar boven */
 body.down {
     overflow: hidden;
     opacity: 0;

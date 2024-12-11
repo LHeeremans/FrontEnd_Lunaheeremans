@@ -46,15 +46,15 @@ const scrollElement = document.querySelector('main section:nth-of-type(5) ul');
 if (scrollElement) {
   console.log("Scrollfunctionaliteit gestart...");
 
-  const scrollInterval = 6000; // 3 seconden (kort voor testdoeleinden)
-  const scrollStep = scrollElement.offsetWidth * 1.05; // 25% van de zichtbare breedte
+  const scrollInterval = 6000; /*3 seconden*/
+  const scrollStep = scrollElement.offsetWidth * 1.05;  /*25% van de zichtbare breedte*/
 
   setInterval(() => {
     const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
     const newScrollLeft = scrollElement.scrollLeft + scrollStep;
 
     if (newScrollLeft >= maxScrollLeft) {
-      scrollElement.scrollLeft = 0; // Reset scrollpositie
+      scrollElement.scrollLeft = 0; 
     } else {
       scrollElement.scrollLeft = newScrollLeft;
     }
@@ -109,7 +109,7 @@ const paragraphs = document.querySelectorAll("h1, h2, h3, p");
 
 // Event listener voor de slider
 slider.addEventListener("input", function() {
-    const value = slider.value + "px"; // Haal de waarde van de slider op en voeg "px" toe
+    const value = slider.value + "pt"; // Haal de waarde van de slider op en voeg "px" toe
     // Pas de font-size van alle geselecteerde paragrafen aan
     paragraphs.forEach(paragraph => {
         paragraph.style.fontSize = value;

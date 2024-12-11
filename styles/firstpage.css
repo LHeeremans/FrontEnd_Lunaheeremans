@@ -72,12 +72,12 @@
     }
 
     section:nth-of-type(3) img {
-        /* 1. content aanpassen */
+        
         content: url("../images/header_2.2.jpeg");
     }
 
     section:nth-of-type(4) img {
-        /* 1. content aanpassen */
+       
         content: url("../images/mcbook2.webp");
     }
 

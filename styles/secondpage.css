@@ -86,10 +86,6 @@
     section:nth-of-type(5), section:nth-of-type(6) li {
     filter: invert(100);
     }
-   
-
-    
-
 
     footer {
         filter: invert(100%);
@@ -232,13 +228,12 @@ main section:nth-of-type(3) li {
     box-shadow: .1em .1em 1em var(--color-grey);
     height: 10em;
 }
+/* gaat naar voren met hover */
 main section:nth-of-type(3) li:hover {
  transform: scale(1.02);
  transition: .5s;
 
 }
-
-
 
 main section:nth-of-type(3) a {
     color: var(--color-blue);
@@ -251,7 +246,6 @@ main section:nth-of-type(3) ul {
     flex-direction: column;
     gap: 2rem;
 }
-
 
 main section:nth-of-type(3) img {
     width: 100%;
@@ -374,10 +368,3 @@ main section:nth-of-type(6) img {
     transform: translateY(.8rem);
 }
 
-
-
-*:has( :checked ){ 
-    main section:nth-of-type(3) {
-        transform: rotate(4deg);
-    }
-}
